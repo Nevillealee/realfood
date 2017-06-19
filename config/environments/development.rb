@@ -1,5 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = {host: 'https://webdev-nevillealee.c9users.io'}
+  config.action_mailer.default_url_options = { host: 'webdev-nevillealee.c9users.io' }
   
   # Settings specified here will take precedence over those in config/application.rb.
 
