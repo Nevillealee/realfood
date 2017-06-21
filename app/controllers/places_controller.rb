@@ -23,6 +23,12 @@ class PlacesController < ApplicationController
         redirect_to root_path
     end
     
+    def update
+        @place= Place.find(params[:id])
+        @place.update_attributes(place_params)
+        redirect_to root_path
+    end
+    
     private
     def place_params
        params.require(:place).permit(:name, :description, :address) 
