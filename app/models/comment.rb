@@ -4,10 +4,10 @@ class Comment < ApplicationRecord
     
     RATINGS = {
         'one star': '1_star',
-        'two_stars': '2_stars',
-        'three_stars': '3_stars',
-        'four_stars': '4_stars',
-        'five_stars': '5_stars'
+        'two stars': '2_stars',
+        'three stars': '3_stars',
+        'four stars': '4_stars',
+        'five stars': '5_stars'
     }
     
       def humanized_rating
