@@ -32,9 +32,9 @@
     <br />
     
     <div class="booyah-box col-10 offset-1">
-      <%= simple_form_for @photo, url: '#' do |f| %>
-        <%= f.input :username %>
-        <%= f.input :password %>
+      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+        <%= f.input :picture %>
+        <%= f.input :caption %>
         <%= f.button :submit %>
       <% end %>
     </div> 
@@ -83,6 +83,11 @@
 </div>
 
 <div class="clear"></div>
+
+<% @place.photos.each do |photo| %>
+  <%= image_tag photo.picture %>
+  <%= photo.caption %>
+<% end %>
 
 <div class="row">
 <% @place.comments.each do |comment| %>
