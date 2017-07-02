@@ -106,7 +106,7 @@
 <div class="clear"></div>
 
 <% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture %>
+  <%= image_tag photo.picture, height: 300, width: 200 %>
   <%= photo.caption %>
 <% end %>
 
