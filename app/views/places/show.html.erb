@@ -101,10 +101,10 @@
   <div class="row">
     <% @place.photos.each do |photo| %>
       <div class="col -10">
-        <div class ="custom-box">
+        <div class ="img-thumbnail">
         <%= image_tag photo.picture, height: 275 %>
-        <h6 class ="text-left, ">"<%= photo.caption %> "</h6>
         </div>
+        <h6 class ="text-left, ">"<%= photo.caption %> "</h6>
       </div>
     <% end %>
   </div>
