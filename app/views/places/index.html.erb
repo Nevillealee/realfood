@@ -51,7 +51,7 @@
         
         <% if place.photos.present? %>
           <div class="col-12">
-          <b><%= image_tag place.photos.last.picture, height: 425 %></b> 
+          <b><%= image_tag place.photos.last.picture, height: 425, class: 'img-fluid' %></b> 
           </div>
         <% end %>
         
